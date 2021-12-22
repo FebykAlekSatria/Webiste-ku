@@ -1,17 +1,19 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
-import { IoSend } from "react-icons/io5"
-import { BsPlusLg } from "react-icons/bs"
-import { MdDelete } from "react-icons/md"
-import { VscLoading } from "react-icons/vsc"
-import { Button } from "react-bootstrap"
-import ModalForm from "../modal/modal"
+import { useEffect, useState } from "react";
+import { IoSend } from "react-icons/io5";
+import { BsPlusLg } from "react-icons/bs";
+import { MdDelete } from "react-icons/md";
+import { VscLoading } from "react-icons/vsc";
+import { Button } from "react-bootstrap";
+import ModalForm from "../modal/modal";
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const FormQuestion = () => {
     const [question, setQuestion] = useState([{ quest: '' }])
-    const [user, setUser] = useState()
+    const [name, setName] = useState()
     const [show, setShow] = useState(false)
+    const [captcha, setCaptcha] = useState(false)
 
     const handleShowModal = () => {
         setShow(true)
@@ -36,22 +38,24 @@ const FormQuestion = () => {
         setQuestion(_question);
     }
     const handleSubmit = async () => {
-        question.map((quest, i) => {
-            await axios.post('https://api-data-febyk.herokuapp.com/', {
+        await question.map((quest, i) => {
+            axios.post('https://api-data-febyk.herokuapp.com/', {
                 id: parseInt(Math.ceil(Math.random() * Date.now()).toPrecision(13).toString().replace(".", "")),
+                nama: name,
                 pesan: quest.quest,
                 kelas: "OOD",
                 keterangan: "Setuju"
-            }, config)
+            })
                 .then(function (res) {
-                    console.log(res);
-                    console.log(user);
+                    if (res.data.message == "Create Data") {
+                        handleShowModal();
+                    }
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
         })
-        handleShowModal();
+
 
     }
 
@@ -66,7 +70,12 @@ const FormQuestion = () => {
                     <p>Anda bisa mengisi form kembali dalam 10 detik dengan inputan yang berbeda</p>
                 </div>
             </ModalForm>
-            <div className="w-10/12 mx-auto space-y-2">
+            <div className="w-10/12 mx-auto space-y-2 mt-4">
+                <input className="focus:shadow-md p-2 w-full border border-gray-300 focus:outline-none rounded-lg "
+                    placeholder="Masukkan nama anda"
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <hr />
                 <label className="block text-sm  text-gray-700">
                     Jika ini adalah Chatbot pertanyaan atau pernyataan apa yang akan anda berikan?
                 </label>
@@ -76,7 +85,7 @@ const FormQuestion = () => {
                             <div className="space-x-2 flex">
                                 <div className="w-full">
                                     <div className="mt-1">
-                                        <textarea rows="4" className="px-2 shadow-sm focus:ring-blue-800 focus:outline-none focus:border-blue-800 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                        <textarea rows="4" className="px-2 focus:shadow-md focus:outline-none mt-1 block w-full sm:text-sm border border-gray-300 rounded-lg"
                                             value={question.quest}
                                             placeholder="Masukkan pertanyaan atau pernyataan diluar domain akademik"
                                             label={question.quest}
@@ -91,17 +100,23 @@ const FormQuestion = () => {
 
                     )
                 })}
-                <div className="space-x-2">
-                    <input className="mt-1" type="checkbox" id="vehicle1" name="vehicle1" value="true" />
-                    <label for="vehicle1" className="text-xs text-gray-400">Saya menyetujui untuk data dipakai dalam penelitian</label><br />
-                </div>
-                <div class="grid grid-cols-2 gap-4">
+                <hr />
+                <ReCAPTCHA
+                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    onChange={() => setCaptcha(true)}
+                />
+                <div className="grid grid-cols-2 gap-4">
                     <div>
                         <Button className='w-full h-12 shadow-sm ' variant='success' onClick={handleAdd}><BsPlusLg className="mx-auto" /></Button>
                     </div>
 
                     <div>
-                        <Button className='w-full h-12 shadow-sm ' onClick={handleSubmit}><IoSend className="mx-auto" /></Button>
+                        {
+                            captcha ?
+                                <Button className='w-full h-12 shadow-sm' onClick={handleSubmit} ><IoSend className="mx-auto" /></Button>
+                                :
+                                <Button className='w-full h-12 shadow-sm' onClick={handleSubmit} disabled><IoSend className="mx-auto" /></Button>
+                        }
                     </div>
                 </div>
             </div>
