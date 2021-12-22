@@ -39,7 +39,7 @@ import Sertifikat10 from '../public/img/IICYMS.jpg';
 export default function Login() {
 
   return (
-    <div>
+    <div className='body'>
       <Navbar>
         <div className="nav__menu font-semibold" id="nav-menu">
           <ul className="nav__list">
@@ -289,9 +289,9 @@ export default function Login() {
           <p className="footer__title">Febyk Alek Satria</p>
           <div className="footer__social flex">
           </div>
-          <a className="no-underline" href="mailto:febykaleksatria@gmail.com" role="button">
-            Kirim
-            Surel</a>
+          <a href="mailto:febykaleksatria@gmail.com"
+            role="button"
+            className="px-4 py-2 rounded-full bg-white no-underline text-neutral-800 font-bold">Kirim Surel</a>
         </section>
         <p>2021 copyright</p>
       </footer>
