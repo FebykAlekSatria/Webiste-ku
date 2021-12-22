@@ -40,7 +40,7 @@ export default function Login() {
 
   return (
     <div className='body'>
-      <Navbar>
+      <Navbar title="Febyk Alek Satria">
         <div className="nav__menu font-semibold" id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item"><a href="#home" className="nav__link no-underline">Home</a></li>

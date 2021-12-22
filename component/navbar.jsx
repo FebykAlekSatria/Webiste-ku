@@ -3,7 +3,7 @@ const Navbar = (props) => {
         <header className="l-header">
             <nav className="nav bd-grid">
                 <div>
-                    <p href="#" className="nav__logo">Febyk Alek Satria</p>
+                    <p href="#" className="nav__logo">{props.title}</p>
                 </div>
                 {
                     props.children
