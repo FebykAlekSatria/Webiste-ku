@@ -18,7 +18,7 @@ const FormQuestion = () => {
     const handleShowModal = () => {
         setShow(true)
         setTimeout(() => {
-            setShow(false)
+            location.reload()
         }, 10000);
     }
 
@@ -100,11 +100,17 @@ const FormQuestion = () => {
 
                     )
                 })}
-                <hr />
+                {/* <hr /> */}
                 <ReCAPTCHA
                     sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                     onChange={() => setCaptcha(true)}
                 />
+                {
+                    captcha ?
+                        null
+                        :
+                        <i className="text-xs text-red-500">*silahkan centang terlebih dahulu sebelum mengirim</i>
+                }
                 <div className="grid grid-cols-2 gap-4">
                     <div>
                         <Button className='w-full h-12 shadow-sm ' variant='success' onClick={handleAdd}><BsPlusLg className="mx-auto" /></Button>
