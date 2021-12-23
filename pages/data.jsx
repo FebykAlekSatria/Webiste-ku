@@ -15,7 +15,7 @@ export default function User() {
                                     className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
                                 </div>
                                 <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl ">
-                                    <h3 className='text-center'>Pengertian "Chatbot"</h3>
+                                    <h3 className='text-center'>{'Pengertian "Chatbot"'}</h3>
                                     <div className='flex -mb-5'>
                                         <h1 className='text-6xl'>C</h1><p className='mt-1 text-justify'>hatbot merupakan sistem perangkat lunak yang dapat berinteraksi dengan manusia menggunakan bahasa sehari – hari (Jacobus, 2021). </p>
                                     </div>
@@ -31,9 +31,9 @@ export default function User() {
                                         <li>2. Tidak lebih dari 25 suku kata</li>
                                         <li>3. Diluar domain akademik <br />
 
-                                            <i>(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?") <br />
-                                                (contoh isian benar : "Siapa penemu bola lampu?")<br />
-                                                (contoh isian benar : "Saya Ingin membeli pizza")
+                                            <i>{'(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?")'}<br />
+                                                {'(contoh isian benar : "Siapa penemu bola lampu?")'}<br />
+                                                {'(contoh isian benar : "Saya Ingin membeli pizza")'}
                                             </i>
 
                                         </li>
@@ -54,7 +54,7 @@ export default function User() {
             <footer className="footer bg-blue-700 mt-10">
                 <section className="contact section" id="contact">
                     <p className="footer__title">Febyk Alek Satria</p>
-                    <a href="/"
+                    <a href="febykaleksatria.tech"
                         role="button"
                         className="px-4 py-2 rounded-full bg-white no-underline font-bold">Ingin Mengenal Febyk?</a>
 

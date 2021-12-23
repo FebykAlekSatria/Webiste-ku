@@ -56,7 +56,7 @@ export default function Login() {
       {/* <!-- Home --!> */}
       <section className="home bd-grid font-bold" id="home">
         <div className="home__data">
-          <h1 className="home__title">Hi,I'am <span className="home__title-color text-blue-700">Febyk</span><br /> Frontend<br />
+          <h1 className="home__title">{"Hi,I'am"} <span className="home__title-color text-blue-700">Febyk</span><br /> Frontend<br />
             Developer</h1>
 
           <a href="https://drive.google.com/file/d/1u-cF2MOQGy1GNlnQO5vv4ULWp952IPQj/view?usp=sharing"
