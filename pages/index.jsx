@@ -283,7 +283,7 @@ export default function Login() {
       </section>
 
 
-      <footer className="footer bg-blue-700">
+      <footer className="footer">
         <section className="contact section" id="contact">
           <h2 className="font-bold text-5xl text-center uppercase">Contact</h2>
           <p className="footer__title">Febyk Alek Satria</p>
