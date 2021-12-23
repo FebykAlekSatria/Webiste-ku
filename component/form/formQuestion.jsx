@@ -74,6 +74,7 @@ const FormQuestion = () => {
                 <input className="focus:shadow-md p-2 w-full border border-gray-300 focus:outline-none rounded-lg "
                     placeholder="Masukkan nama anda"
                     onChange={(e) => setName(e.target.value)}
+                    autoFocus={true}
                 />
                 <hr />
                 <label className="block text-sm  text-gray-700">
@@ -81,7 +82,7 @@ const FormQuestion = () => {
                 </label>
                 {question.map((question, i) => {
                     return (
-                        <div className="form-input-wrapper" key={i}>
+                        <div className="form-input-wrapper my-2" key={i}>
                             <div className="space-x-2 flex">
                                 <div className="w-full">
                                     <div className="mt-1">
