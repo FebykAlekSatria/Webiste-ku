@@ -10,16 +10,18 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 const FormQuestion = () => {
-    const [question, setQuestion] = useState([{ quest: '' }])
-    const [name, setName] = useState()
+    const [question, setQuestion] = useState([{ quest: "" }])
+    const [name, setName] = useState("")
+    const [title, setTitle] = useState("TERIMAKASIH")
+    const [pesan, setPesan] = useState("Anda telah membantu dan mempermudah saya dalam menyelesaikan penelitian ini")
     const [show, setShow] = useState(false)
+    const [validation, setValidation] = useState(true)
     const [captcha, setCaptcha] = useState(false)
 
     const handleShowModal = () => {
-        setShow(true)
         setTimeout(() => {
             location.reload()
-        }, 10000);
+        }, 5000);
     }
 
     const handleChange = (i, e) => {
@@ -37,37 +39,58 @@ const FormQuestion = () => {
         _question.splice(i, 1);
         setQuestion(_question);
     }
-    const handleSubmit = async () => {
-        await question.map((quest, i) => {
-            axios.post('https://api-data-febyk.herokuapp.com/', {
-                id: parseInt(Math.ceil(Math.random() * Date.now()).toPrecision(13).toString().replace(".", "")),
-                nama: name,
-                pesan: quest.quest,
-                kelas: "OOD",
-                keterangan: "Setuju"
+    const handleSubmit = () => {
+        if (name != '') {
+            question.map((quest, i) => {
+                if (quest.quest === '') {
+                    setValidation(false)
+                } else {
+                    setShow(true)
+                    axios.post('https://api-data-febyk.herokuapp.com/', {
+                        id: parseInt(Math.ceil(Math.random() * Date.now()).toPrecision(13).toString().replace(".", "")),
+                        nama: name,
+                        pesan: quest.quest,
+                        kelas: "OOD",
+                        keterangan: "Setuju"
+                    })
+                        .then(function (res) {
+                            console.log(res);
+                            if (res.data.message == "Create Data") {
+                                handleShowModal();
+                            }
+                            else {
+                                setTitle("MAAF");
+                                setPesan("Jangan ada data yang kosong atau jaringan anda tidak stabil, saya harap anda ingin memperbaikinya")
+                                setTimeout(() => {
+                                    setShow(false)
+                                }, 5000);
+                            }
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                            setTitle("MAAF");
+                            setPesan("Jangan ada data yang kosong atau jaringan anda tidak stabil, saya harap anda ingin memperbaikinya")
+                            setTimeout(() => {
+                                setShow(false)
+                            }, 5000);
+                        });
+                }
             })
-                .then(function (res) {
-                    if (res.data.message == "Create Data") {
-                        handleShowModal();
-                    }
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-        })
-
-
+        } else {
+            setValidation(false)
+            console.log('nama kosong')
+        }
     }
 
     return (
         <div>
-            <ModalForm show={show} title="TERIMAKASIH">
+            <ModalForm show={show} title={title}>
                 <div className="mx-4 text-center">
-                    <p>Anda telah membantu dan mempermudah saya dalam menyelesaikan penelitian ini</p>
+                    <p>{pesan}</p>
                 </div>
-                <VscLoading className="animate-spin h-16 w-16 mr-3 text-blue-900 mx-auto" />
-                <div className="mt-4 mx-4 text-center font-bold">
-                    <p>Anda bisa mengisi form kembali dalam 10 detik dengan inputan yang berbeda</p>
+                <VscLoading className="animate-spin h-24 w-24 text-sky-400 mx-auto" />
+                <div className="my-4 mx-4 text-center font-bold">
+                    <p>Anda bisa mengisi form kembali setelah 5 detik</p>
                 </div>
             </ModalForm>
             <div className="w-10/12 mx-auto space-y-2 mt-4">
@@ -102,7 +125,10 @@ const FormQuestion = () => {
                 })}
                 {/* <hr /> */}
 
-
+                {
+                    validation ? null :
+                        <p>Jangan ada data kosong</p>
+                }
                 <div className="mt-4">
                     <div className="mb-2">
                         <Button className='w-full h-12 shadow-sm ' variant='success' onClick={handleAdd}><BsPlusLg className="mx-auto" /></Button>

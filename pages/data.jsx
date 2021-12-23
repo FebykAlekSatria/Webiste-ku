@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { VscLoading } from 'react-icons/vsc';
 import FormQuestion from '../component/form/formQuestion';
 import Navbar from '../component/navbar';
 
