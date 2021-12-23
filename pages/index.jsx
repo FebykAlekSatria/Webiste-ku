@@ -32,6 +32,7 @@ import Sertifikat7 from '../public/img/work1.jpeg';
 import Sertifikat8 from '../public/img/sertifikat2.jpg';
 import Sertifikat9 from '../public/img/IYSA.jpg';
 import Sertifikat10 from '../public/img/IICYMS.jpg';
+import Head from 'next/head';
 
 
 
@@ -40,6 +41,9 @@ export default function Login() {
 
   return (
     <div className='body'>
+      <Head>
+        <title>Portofolio Febyk</title>
+      </Head>
       <Navbar title="Febyk Alek Satria">
         <div className="nav__menu font-semibold" id="nav-menu">
           <ul className="nav__list">

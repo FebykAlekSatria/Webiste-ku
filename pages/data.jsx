@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head';
 import { VscLoading } from 'react-icons/vsc';
 import FormQuestion from '../component/form/formQuestion';
 import Navbar from '../component/navbar';
@@ -6,6 +7,9 @@ import Navbar from '../component/navbar';
 export default function User() {
     return (
         <div className="">
+            <Head>
+                <title>Pengumpulan Dataset</title>
+            </Head>
             <Navbar title="Pengumpulan Dataset"></Navbar>
             <div className='mx-4 lg:mx-0'>
                 <div className="md:grid grid-cols-2 gap-20 mt-10">
