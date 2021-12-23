@@ -7,7 +7,7 @@ export default function User() {
         <div className="">
             <Navbar title="Pengumpulan Dataset"></Navbar>
             <div className='mx-4 lg:mx-0'>
-                <div className="md:grid grid-cols-2 gap-20 mt-2">
+                <div className="md:grid grid-cols-2 gap-20 mt-10">
                     <div >
                         <div className="min-h-72 py-6 flex flex-col justify-center sm:py-12">
                             <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -43,7 +43,7 @@ export default function User() {
                         </div>
                     </div>
                     <div>
-                        <div className="py-4 w-10/12 mx-auto my-10 mt-20 bg-white shadow rounded-3xl">
+                        <div className="py-4 w-full lg:w-10/12 mx-auto my-10 mt-20 bg-white shadow rounded-3xl">
                             <h3 className='text-center'>Form Pengumpulan Dataset</h3>
                             <FormQuestion />
                         </div>
@@ -54,7 +54,7 @@ export default function User() {
             <footer className="footer bg-blue-700 mt-10">
                 <section className="contact section" id="contact">
                     <p className="footer__title">Febyk Alek Satria</p>
-                    <a href="febykaleksatria.tech"
+                    <a href="https://febykaleksatria.herokuapp.com/"
                         role="button"
                         className="px-4 py-2 rounded-full bg-white no-underline font-bold">Ingin Mengenal Febyk?</a>
 

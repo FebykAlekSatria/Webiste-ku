@@ -148,7 +148,7 @@ export default function Login() {
       <section className="about section" id="Work">
         <h2 className="font-bold text-5xl text-center uppercase">Work</h2>
         <div className="px-10  md:px-8 md:flex item-center w-full">
-          <div className="mx-auto lg:grid grid-cols-2 gap-2">
+          <div className="mx-auto lg:grid grid-cols-2 gap-20">
 
             <Works
               desc="Sistem penyimpanan secara digital untuk membantu mempermudah dan mengamankan file perusahaan. PWA ini dikembangkan dengan beberapa teknologi terbaru :"
