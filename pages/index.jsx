@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
+import { useState } from 'react';
 import Navbar from '../component/navbar';
 import Skills from '../component/portofolio/skills';
 import Works from '../component/portofolio/work';
@@ -55,11 +56,11 @@ export default function Login() {
       {/* <!-- Home --!> */}
       <section className="home bd-grid font-bold" id="home">
         <div className="home__data">
-          <h1 className="home__title">{"Hi,I'am"} <span className="home__title-color text-blue-700">Febyk</span><br /> Frontend<br />
+          <h1 className="home__title">{"Hi,I'am"} <span className="text-sky-400 font-semibold">Febyk</span><br /> Frontend<br />
             Developer</h1>
 
           <a href="https://drive.google.com/file/d/1u-cF2MOQGy1GNlnQO5vv4ULWp952IPQj/view?usp=sharing"
-            className="button bg-blue-700 no-underline">Download CV</a>
+            className="bg-sky-500 text-white font-semibold text-lg md:text-xl mb-6 px-8 py-3 shadow-md rounded-3xl no-underline">Download CV</a>
         </div>
 
         <div className="home__social">
@@ -96,7 +97,7 @@ export default function Login() {
                 </p>
               </blockquote>
               <figcaption className="font-medium">
-                <div className="text-cyan-600 font-bold">
+                <div className="text-sky-400 font-bold">
                   Febyk Alek Satria
                 </div>
                 <div className="text-color">
@@ -146,8 +147,8 @@ export default function Login() {
       {/* <!-- Work --!> */}
       <section className="about section" id="Work">
         <h2 className="font-bold text-5xl text-center uppercase">Work</h2>
-        <div className="px-10  md:px-8 md:flex item-center">
-          <div className="mx-auto flex flex-wrap">
+        <div className="px-10  md:px-8 md:flex item-center w-full">
+          <div className="mx-auto lg:grid grid-cols-2 gap-2">
 
             <Works
               desc="Sistem penyimpanan secara digital untuk membantu mempermudah dan mengamankan file perusahaan. PWA ini dikembangkan dengan beberapa teknologi terbaru :"

@@ -61,9 +61,6 @@ export default function User() {
                 </section>
                 <p>2021 copyright</p>
             </footer>
-
-            {/* */}
-
         </div >
     )
 }

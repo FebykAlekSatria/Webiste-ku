@@ -101,22 +101,17 @@ const FormQuestion = () => {
                     )
                 })}
                 {/* <hr /> */}
-                <ReCAPTCHA
-                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    onChange={() => setCaptcha(true)}
-                />
-                {
-                    captcha ?
-                        null
-                        :
-                        <i className="text-xs text-red-500">*silahkan centang terlebih dahulu sebelum mengirim</i>
-                }
-                <div className="grid grid-cols-2 gap-4">
-                    <div>
+
+
+                <div className="mt-4">
+                    <div className="mb-2">
                         <Button className='w-full h-12 shadow-sm ' variant='success' onClick={handleAdd}><BsPlusLg className="mx-auto" /></Button>
                     </div>
-
-                    <div>
+                    <ReCAPTCHA
+                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                        onChange={() => setCaptcha(true)}
+                    />
+                    <div className="mt-2">
                         {
                             captcha ?
                                 <Button className='w-full h-12 shadow-sm' onClick={handleSubmit} ><IoSend className="mx-auto" /></Button>
@@ -125,6 +120,7 @@ const FormQuestion = () => {
                         }
                     </div>
                 </div>
+
             </div>
         </div>
     );
