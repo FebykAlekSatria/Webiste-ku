@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { IoLogoWhatsapp } from "react-icons/Io";
-import { RiInstagramFill } from "react-icons/Ri";
-import { useState } from 'react';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
 import Navbar from '../component/navbar';
 import Skills from '../component/portofolio/skills';
 import Works from '../component/portofolio/work';
@@ -14,9 +13,9 @@ import About from '../public/img/profil2.jpg'
 import Digifile1 from '../public/img/Digifile.jpg';
 import Digifile2 from '../public/img/Digifile2.jpg';
 import Digifile3 from '../public/img/Digifile3.jpg';
-import CAT1 from '../public/img/CAT.jpg';
-import CAT2 from '../public/img/CAT2.jpg';
-import CAT3 from '../public/img/CAT3.jpg';
+import CAT1 from '../public/img/CAT.JPG';
+import CAT2 from '../public/img/CAT2.JPG';
+import CAT3 from '../public/img/CAT3.JPG';
 import qna1 from '../public/img/qna1.jpg';
 import qna2 from '../public/img/qna2.jpg';
 import Review1 from '../public/img/review.jpg';
