@@ -90,7 +90,6 @@ const FormQuestion = () => {
                                             placeholder="Masukkan pertanyaan atau pernyataan diluar domain akademik"
                                             label={question.quest}
                                             onChange={e => handleChange(i, e)}
-                                            autoFocus={true}
                                         ></textarea>
                                     </div>
                                 </div>
