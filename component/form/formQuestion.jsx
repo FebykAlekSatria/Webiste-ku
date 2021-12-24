@@ -111,7 +111,7 @@ const FormQuestion = () => {
                                     <div className="mt-1">
                                         <textarea rows="4" className="px-2 focus:shadow-md focus:outline-none mt-1 block w-full sm:text-sm border border-gray-300 rounded-lg"
                                             value={question.quest}
-                                            placeholder="Masukkan pertanyaan atau pernyataan diluar domain akademik"
+                                            placeholder="Masukkan pertanyaan atau pernyataan di luar domain akademik"
                                             label={question.quest}
                                             onChange={e => handleChange(i, e)}
                                         ></textarea>

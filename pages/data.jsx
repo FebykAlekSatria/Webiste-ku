@@ -1,12 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
+import Image from 'next/image';
+import { useState } from 'react';
 import { VscLoading } from 'react-icons/vsc';
 import FormQuestion from '../component/form/formQuestion';
+import ModalForm from '../component/modal/modal';
 import Navbar from '../component/navbar';
+import Prosedure from '../public/img/Prosedure.png'
 
 export default function User() {
+    const [showForm, setShowForm] = useState(false)
     return (
         <div className="">
+            <ModalForm show={showForm} title="TATA CARA">
+                <Image src={Prosedure} alt="Prosedure" className='' />
+                <button onClick={() => setShowForm(false)} className="w-4/12 mx-auto bg-red-400 text-white font-semibold text-sm text-lg mb-6 px-6 py-2 shadow-md rounded-3xl no-underline">tutup</button>
+
+            </ModalForm>
             <Head>
                 <title>Pengumpulan Dataset</title>
             </Head>
@@ -33,7 +43,7 @@ export default function User() {
                                     </p>
                                     <ul>
                                         <li>1. Menggunakan PUEBI (bahasa Indonesia)</li>
-                                        <li>2. Tidak lebih dari 25 suku kata</li>
+                                        <li>2. Tidak lebih dari 25 kata</li>
                                         <li>3. Diluar domain akademik <br />
 
                                             <i>{'(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?")'}<br />
@@ -43,7 +53,9 @@ export default function User() {
 
                                         </li>
                                     </ul>
+                                    <button onClick={() => setShowForm(true)} className="bg-sky-400 text-white font-semibold text-sm text-lg mb-6 px-6 py-2 shadow-md rounded-3xl no-underline">Tata cara pengisian</button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -60,9 +72,7 @@ export default function User() {
                 <section className="contact section" id="contact">
                     <p className="footer__title">Febyk Alek Satria</p>
                     <a href="https://febykaleksatria.herokuapp.com/"
-                        role="button"
-                        className="px-4 py-2 rounded-full bg-white no-underline font-bold">Ingin Mengenal Febyk?</a>
-
+                        className="bg-white text-sky-400 font-semibold text-lg md:text-xl mb-6 px-8 py-2 shadow-md rounded-3xl no-underline">Mengenal Febyk</a>
                 </section>
                 <p>2021 copyright</p>
             </footer>

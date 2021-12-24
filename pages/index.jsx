@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
-import { useState } from 'react';
 import Navbar from '../component/navbar';
 import Skills from '../component/portofolio/skills';
 import Works from '../component/portofolio/work';
