@@ -6,7 +6,7 @@ import { VscLoading } from 'react-icons/vsc';
 import FormQuestion from '../component/form/formQuestion';
 import ModalForm from '../component/modal/modal';
 import Navbar from '../component/navbar';
-import Prosedure from '../public/img/Prosedure.png'
+import Prosedure from '../public/img/Prosedure.jpg'
 
 export default function User() {
     const [showForm, setShowForm] = useState(false)
