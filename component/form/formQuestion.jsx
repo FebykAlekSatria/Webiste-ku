@@ -94,13 +94,13 @@ const FormQuestion = () => {
                 </div>
             </ModalForm>
             <div className="w-10/12 mx-auto space-y-2 mt-4">
-                <input className="focus:shadow-md p-2 w-full border border-gray-300 focus:outline-none rounded-lg "
+                <input className="focus:shadow-md p-2 w-full focus:outline-none rounded-lg bg-slate-900 text-white"
                     placeholder="Masukkan nama anda"
                     onChange={(e) => setName(e.target.value)}
                     autoFocus={true}
                 />
                 <hr />
-                <label className="block text-sm  text-gray-700">
+                <label className="block text-sm  text-white">
                     Jika ini adalah Chatbot pertanyaan atau pernyataan apa yang akan anda berikan?
                 </label>
                 {question.map((question, i) => {
@@ -109,7 +109,7 @@ const FormQuestion = () => {
                             <div className="space-x-2 flex">
                                 <div className="w-full">
                                     <div className="mt-1">
-                                        <textarea rows="4" className="px-2 focus:shadow-md focus:outline-none mt-1 block w-full sm:text-sm border border-gray-300 rounded-lg"
+                                        <textarea rows="4" className="p-2 focus:shadow-md focus:outline-none mt-1 block w-full sm:text-sm rounded-lg bg-slate-900 text-white"
                                             value={question.quest}
                                             placeholder="Masukkan pertanyaan atau pernyataan di luar domain akademik"
                                             label={question.quest}
@@ -140,15 +140,15 @@ const FormQuestion = () => {
                     <div className="mt-2">
                         {
                             captcha ?
-                                <Button className='w-full h-12 shadow-sm' onClick={handleSubmit} ><IoSend className="mx-auto" /></Button>
+                                <button className='w-full py-2 shadow-sm bg-sky-400 rounded text-white' onClick={handleSubmit} ><IoSend className="mx-auto" /></button>
                                 :
-                                <Button className='w-full h-12 shadow-sm' onClick={handleSubmit} disabled><IoSend className="mx-auto" /></Button>
+                                <button className='w-full py-2 shadow-sm bg-sky-400 rounded text-white' onClick={handleSubmit} disabled><IoSend className="mx-auto" /></button>
                         }
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 
 }

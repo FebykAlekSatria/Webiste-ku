@@ -1,9 +1,9 @@
 const Navbar = (props) => {
     return (
-        <header className="l-header">
-            <nav className="nav bd-grid">
+        <header className="l-header ">
+            <nav className="nav bd-grid pt-3 ">
                 <div>
-                    <p href="#" className="nav__logo">{props.title}</p>
+                    <p className="text-xl font-bold text-sky-400">{props.title}</p>
                 </div>
                 {
                     props.children

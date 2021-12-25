@@ -39,19 +39,19 @@ import Head from 'next/head';
 export default function Login() {
 
   return (
-    <div className='body'>
+    <div className='body font-sans text-sm bg-slate-900'>
       <Head>
         <title>Portofolio Febyk</title>
       </Head>
       <Navbar title="Febyk Alek Satria">
-        <div className="nav__menu font-semibold" id="nav-menu">
+        <div className="nav__menu font-semibold " id="nav-menu">
           <ul className="nav__list">
-            <li className="nav__item"><a href="#home" className="nav__link no-underline">Home</a></li>
-            <li className="nav__item"><a href="#about" className="nav__link no-underline">About</a></li>
-            <li className="nav__item"><a href="#skills" className="nav__link no-underline">Skills</a></li>
-            <li className="nav__item"><a href="#Work" className="nav__link no-underline">Work</a></li>
-            <li className="nav__item"><a href="#Achievement" className="nav__link no-underline">Achievement</a></li>
-            <li className="nav__item"><a href="#contact" className="nav__link no-underline">Contact</a></li>
+            <li className="nav__item"><a href="#home" className="nav__link no-underline text-white">Home</a></li>
+            <li className="nav__item"><a href="#about" className="nav__link no-underline text-white">About</a></li>
+            <li className="nav__item"><a href="#skills" className="nav__link no-underline text-white">Skills</a></li>
+            <li className="nav__item"><a href="#Work" className="nav__link no-underline text-white">Work</a></li>
+            <li className="nav__item"><a href="#Achievement" className="nav__link no-underline text-white">Achievement</a></li>
+            <li className="nav__item"><a href="#contact" className="nav__link no-underline text-white">Contact</a></li>
           </ul>
         </div>
       </Navbar>
@@ -59,11 +59,11 @@ export default function Login() {
       {/* <!-- Home --!> */}
       <section className="home bd-grid font-bold" id="home">
         <div className="home__data">
-          <h1 className="home__title">{"Hi,I'am"} <span className="text-sky-400 font-semibold">Febyk</span><br /> Frontend<br />
-            Developer</h1>
+          <h2 className="my-10 text-5xl font-bold text-white">{"Hi,I'am"} <span className="text-sky-400 font-bold">Febyk</span><br /> Frontend<br />
+            Developer</h2>
 
           <a href="https://drive.google.com/file/d/1u-cF2MOQGy1GNlnQO5vv4ULWp952IPQj/view?usp=sharing"
-            className="bg-sky-500 text-white font-semibold text-lg md:text-xl mb-6 px-8 py-3 shadow-md rounded-3xl no-underline">Download CV</a>
+            className="bg-sky-500 text-white font-bold text-lg md:text-xl mb-6 px-8 py-3 shadow-md rounded-3xl no-underline">Download CV</a>
         </div>
 
         <div className="home__social">
@@ -80,15 +80,15 @@ export default function Login() {
 
       {/* <!-- ABOUT --!> */}
       <section className="about section " id="about">
-        <h2 className="font-bold text-5xl text-center uppercase mb-10">About</h2>
+        <h2 className="font-bold text-3xl text-center mb-10 text-sky-400">About</h2>
 
         <div className="about__container">
-          <figure className="w-10/12 lg:w-8/12 lg:flex bg-white shadow-md rounded-xl p-8 md:p-0 mx-auto">
+          <figure className="w-10/12 lg:w-8/12 lg:flex bg-slate-800 shadow-md rounded-xl p-8 md:p-0 mx-auto">
             <Image className="w-40 h-40 lg:w-72 lg:h-auto rounded-full lg:rounded-none mx-auto"
               src={About} alt="profil" />
-            <div className="pt-6 md:p-8 md:text-center lg:text-left space-y-4">
+            <div className="pt-6 md:p-8 space-y-4 sm:text-center md:text-justify ">
               <blockquote>
-                <p className="text text-base text-gray-700">
+                <p className="text-white">
                   “Saya mahasiswa S1 Teknik Informatika UNSRI, memiliki komitmen untuk
                   menyelesaikan masalah dalam suatu pekerjaan, selama berkuliah
                   saya memeiliki beberapa penghargaan regional, nasional maupun internasional. Selama
@@ -103,7 +103,7 @@ export default function Login() {
                 <div className="text-sky-400 font-bold">
                   Febyk Alek Satria
                 </div>
-                <div className="text-color">
+                <div className="text-white">
                   Mahasiswa | Frontend Developer | Indonesia
                 </div>
               </figcaption>
@@ -114,46 +114,47 @@ export default function Login() {
 
       {/* <!-- SKILL --!> */}
 
-      <section className="skills section" id="skills">
+      <section className="skills section text-sm" id="skills">
 
-        <h2 className="font-bold text-5xl text-center">SKILLS</h2>
+        <h2 className="font-bold text-3xl text-center text-sky-400">Skills</h2>
 
 
-        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 bg-white px-4 md:py-8 md:px-8 md:m-16 rounded-lg">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 px-4 rounded-lg">
           <Skills title="Pemograman">
-            <hr className="text-gray-600 mb-2" />
-            <p className="text-gray-600 text-base mb-2">Java</p>
-            <p className="text-gray-600 text-base mb-2">JavaScript</p>
-            <p className="text-gray-600 text-base mb-2">PHP</p>
-            <p className="text-gray-600 text-base mb-2">HTML</p>
-            <p className="text-gray-600 text-base mb-2">CSS</p>
+            <hr className="text-white mb-2" />
+            <p className="text-white mb-2">Java</p>
+            <p className="text-white mb-2">JavaScript</p>
+            <p className="text-white mb-2">PHP</p>
+            <p className="text-white mb-2">HTML</p>
+            <p className="text-white mb-2">CSS</p>
           </Skills>
 
           <Skills title="Framework/Library">
-            <hr className="text-gray-600 mb-2" />
-            <p className="text-gray-600 text-base mb-2">React JS/Next JS</p>
-            <p className="text-gray-600 text-base mb-2">Node JS</p>
-            <p className="text-gray-600 text-base mb-2">Express JS</p>
-            <p className="text-gray-600 text-base mb-2">Codeigniter</p>
-            <p className="text-gray-600 text-base mb-2">Laravel</p>
-            <p className="text-gray-600 text-base mb-2">Tailwind</p>
-            <p className="text-gray-600 text-base mb-2">Boostrap</p>
+            <hr className="text-white mb-2" />
+            <p className="text-white mb-2">React JS/Next JS</p>
+            <p className="text-white mb-2">Node JS</p>
+            <p className="text-white mb-2">Express JS</p>
+            <p className="text-white mb-2">Codeigniter</p>
+            <p className="text-white mb-2">Laravel</p>
+            <p className="text-white mb-2">Tailwind</p>
+            <p className="text-white mb-2">Boostrap</p>
           </Skills>
           <Skills title="Database">
-            <hr className="text-gray-600 mb-2" />
-            <p className="text-gray-600 text-base mb-2">MySQL</p>
-            <p className="text-gray-600 text-base mb-2">SQLite</p>
+            <hr className="text-white mb-2" />
+            <p className="text-white mb-2">MySQL</p>
+            <p className="text-white mb-2">SQLite</p>
           </Skills>
         </div>
       </section>
 
       {/* <!-- Work --!> */}
       <section className="about section" id="Work">
-        <h2 className="font-bold text-5xl text-center uppercase">Work</h2>
+        <h2 className="font-bold text-3xl text-center text-sky-400">Work</h2>
         <div className="px-10  md:px-8 md:flex item-center w-full">
-          <div className="mx-auto lg:grid grid-cols-2 gap-20">
+          <div className="mx-auto lg:grid grid-cols-2 gap-2">
 
             <Works
+              title="Digifile"
               desc="Sistem penyimpanan secara digital untuk membantu mempermudah dan mengamankan file perusahaan. PWA ini dikembangkan dengan beberapa teknologi terbaru :"
               lang=" JavaScript "
               framework=" React Js"
@@ -175,6 +176,7 @@ export default function Login() {
             </Works>
 
             <Works
+              title="Web-Cat"
               desc="Web-Cat berfungsi untuk mengevaluasi pengetahuan dari instansi PGRI yang ada di SUMSEL. Web ini dikembangkan dengan beberapa teknologi terbaru :"
               lang=" PHP "
               framework=" CodeIgniter"
@@ -196,6 +198,7 @@ export default function Login() {
             </Works>
 
             <Works
+              title="Blog Review"
               desc="Blog Reviwer merupakan sebuah website untuk meriview barang untuk menarik pembeli. Web ini dikembangkan dengan beberapa teknologi terbaru :s"
               lang=" PHP "
               framework=" Laravel"
@@ -217,6 +220,7 @@ export default function Login() {
             </Works>
 
             <Works
+              title="QnA"
               desc="QNA merupakan tempat dimana kita mempertanyakan sesuatu kepada orang dan
               orang akan menjawabnya tanpa edentitas ataupun dengan edentitas
               sebenarnya. Web ini dikembangkan dengan beberapa
@@ -246,7 +250,7 @@ export default function Login() {
 
       {/* <!-- ARCHIeVMENT --!> */}
       <section className="work section" id="Achievement">
-        <h2 className="font-bold text-5xl text-center uppercase mb-10">Achievement</h2>
+        <h2 className="font-bold text-3xll text-center mb-10 text-sky-400">Achievement</h2>
 
         <div className="work__container bd-grid">
           <div className="work__img">
@@ -294,7 +298,7 @@ export default function Login() {
           </div>
           <a href="mailto:febykaleksatria@gmail.com"
             role="button"
-            className="px-4 py-2 rounded-full bg-white no-underline text-neutral-800 font-bold">Kirim Surel</a>
+            className="px-4 py-2 rounded-full bg-slate-900 no-underline text-sky-400 font-bold">Kirim Surel</a>
         </section>
         <p>2021 copyright</p>
       </footer>
