@@ -127,7 +127,7 @@ const FormQuestion = () => {
 
                 {
                     validation ? null :
-                        <p>Jangan ada data kosong</p>
+                        <i className="text-white text-sm">Jangan ada data kosong</i>
                 }
                 <div className="mt-4">
                     <div className="mb-2">
