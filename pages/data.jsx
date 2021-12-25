@@ -70,7 +70,7 @@ export default function User() {
             <footer className="footer bg-blue-700 mt-10">
                 <section className="contact section" id="contact">
                     <p className="footer__title">Febyk Alek Satria</p>
-                    <a href="febykaleksatria.tech"
+                    <a href="/"
                         role="button"
                         className="px-4 py-2 rounded-full bg-slate-900 no-underline text-sky-400 font-bold">Mengenal Febyk</a>
                 </section>
