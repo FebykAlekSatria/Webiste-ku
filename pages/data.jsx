@@ -38,7 +38,7 @@ export default function User() {
                                         Teknologi ini sangat memungkinkan untuk bisa menjawab berbagai jenis pertanyaan ataupun masalah yang dihadapi pengguna secara cepat dan tepat.</p>
 
                                     <h6 className='font-semibold'>Bantu saya untuk mengembangkannya</h6>
-                                    <p className='text-justify mt-1'>Chatbot dibangun dengan topik atau dengan domain spesifik yaitu <b>Akademik</b>. Sehingga saat pengguna memasukkan pesan diluar kemampuan chatbot,
+                                    <p className='text-justify mt-1'>Chatbot dibangun dengan topik atau dengan domain spesifik yaitu <b>Akademik</b> <i>(menjawab pertanyaan seputar daftar nilai, mahasiswa, dosen)</i>. Sehingga saat pengguna memasukkan pesan diluar kemampuan chatbot,
                                         maka <b>chatbot mungkin tidak bisa menjawab dengan benar.</b> Isi form dibawah/kanan anda untuk membantu saya, isi dengan kriteria berikut :
                                     </p>
                                     <ul>
@@ -48,7 +48,8 @@ export default function User() {
 
                                             <i>{'(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?")'}<br />
                                                 {'(contoh isian benar : "Siapa penemu bola lampu?")'}<br />
-                                                {'(contoh isian benar : "Saya Ingin membeli pizza")'}
+                                                {'(contoh isian benar : "Bagaiamana cara mendapatkan nilai tinggi?")'}
+                                                {'(contoh isian benar : "saya ingin nilai tinggi")'}
                                             </i>
 
                                         </li>
