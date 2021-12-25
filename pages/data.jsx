@@ -43,11 +43,17 @@ export default function User() {
                                     <ul>
                                         <li>1. Menggunakan PUEBI (bahasa Indonesia)</li>
                                         <li>2. Tidak lebih dari 25 kata</li>
-                                        <li>3. Diluar domain akademik <br />
-                                            <i>{'(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?")'}<br />
-                                                {'(contoh isian benar : "Siapa penemu bola lampu?")'}<br />
-                                                {'(contoh isian benar : "Bagaiamana cara mendapatkan nilai tinggi?")'}<br />
-                                                {'(contoh isian benar : "Tolong temukan lokasi unsri")'}
+                                        <li>3. Diluar domain akademik <br /><br />
+                                            <i className='text-red-400'>
+                                                contoh domain akademik : <br />
+                                                {'1. "Berapa IPK mahasiswa dengan nim xxx?"'}<br />
+                                                {'2. "Siapa nama dosen pembimbing akademik mahasiswa nim xxx?"'}<br /><br />
+                                            </i>
+                                            <i className='text-green-400'>
+                                                Contoh di luar domain akademik : <br />
+                                                {'1. "Siapa penemu bola lampu?"'}<br />
+                                                {'2. "Bagaiamana cara mendapatkan nilai tinggi?"'}<br />
+                                                {'3. "Tolong temukan lokasi unsri"'}
                                             </i>
 
                                         </li>
