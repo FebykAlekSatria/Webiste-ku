@@ -44,11 +44,10 @@ export default function User() {
                                         <li>1. Menggunakan PUEBI (bahasa Indonesia)</li>
                                         <li>2. Tidak lebih dari 25 kata</li>
                                         <li>3. Diluar domain akademik <br />
-
                                             <i>{'(contoh isian salah : "Berapa IPK mahasiswa dengan nim xxx?")'}<br />
                                                 {'(contoh isian benar : "Siapa penemu bola lampu?")'}<br />
-                                                {'(contoh isian benar : "Bagaiamana cara mendapatkan nilai tinggi?")'}
-                                                {'(contoh isian benar : "saya ingin nilai tinggi")'}
+                                                {'(contoh isian benar : "Bagaiamana cara mendapatkan nilai tinggi?")'}<br />
+                                                {'(contoh isian benar : "Tolong temukan lokasi unsri")'}
                                             </i>
 
                                         </li>

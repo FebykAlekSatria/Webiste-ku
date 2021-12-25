@@ -142,7 +142,7 @@ const FormQuestion = () => {
                             captcha ?
                                 <button className='w-full py-2 shadow-sm bg-sky-400 rounded text-white' onClick={handleSubmit} ><IoSend className="mx-auto" /></button>
                                 :
-                                <button className='w-full py-2 shadow-sm bg-sky-400 rounded text-white' onClick={handleSubmit} disabled><IoSend className="mx-auto" /></button>
+                                <button className='w-full py-2 shadow-sm bg-sky-200 rounded text-white' onClick={handleSubmit} disabled><IoSend className="mx-auto" /></button>
                         }
                     </div>
                 </div>
