@@ -134,7 +134,7 @@ const FormQuestion = () => {
                         <Button className='w-full h-12 shadow-sm ' variant='success' onClick={handleAdd}><BsPlusLg className="mx-auto" /></Button>
                     </div>
                     <ReCAPTCHA
-                        sitekey="6Lc7K8EdAAAAAHmHvFzcDU7p-4M2d1A4cwZNiWQ3"
+                        sitekey="6LdmOcgdAAAAAHuFIWXHCEsT5Y6Fr3vh2F0db6B1"
                         onChange={() => setCaptcha(true)}
                     />
                     <div className="mt-2">
