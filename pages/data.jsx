@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import { VscLoading } from 'react-icons/vsc';
 import FormQuestion from '../component/form/formQuestion';
 import ModalForm from '../component/modal/modal';
 import Navbar from '../component/navbar';
@@ -13,7 +12,7 @@ export default function User() {
     return (
         <div className="font-sans bg-slate-900">
             <ModalForm show={showForm} title="TATA CARA">
-                <Image src={Prosedure} alt="Prosedure" className='' />
+                <Image src={Prosedure} alt="Prosedure" />
                 <button onClick={() => setShowForm(false)} className="w-4/12 mx-auto bg-red-400 text-white font-semibold text-sm text-lg mb-6 px-6 py-2 shadow-md rounded-3xl no-underline">tutup</button>
 
             </ModalForm>
@@ -72,7 +71,7 @@ export default function User() {
             <footer className="footer bg-blue-700 mt-10">
                 <section className="contact section" id="contact">
                     <p className="footer__title">Febyk Alek Satria</p>
-                    <a href="https://febykaleksatria.herokuapp.com/"
+                    <a href="febykaleksatria.tech"
                         role="button"
                         className="px-4 py-2 rounded-full bg-slate-900 no-underline text-sky-400 font-bold">Mengenal Febyk</a>
                 </section>
