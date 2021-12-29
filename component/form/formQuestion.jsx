@@ -4,7 +4,7 @@ import { IoSend } from "react-icons/io5";
 import { BsPlusLg } from "react-icons/bs";
 import { MdDelete } from "react-icons/md";
 import { VscLoading } from "react-icons/vsc";
-import { Button } from "react-bootstrap";
+import { Button, Spinner } from "react-bootstrap";
 import ModalForm from "../modal/modal";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -88,7 +88,7 @@ const FormQuestion = () => {
                 <div className="mx-4 text-center">
                     <p>{pesan}</p>
                 </div>
-                <VscLoading className="animate-spin h-24 w-24 text-sky-400 mx-auto" />
+                <Spinner animation="border" variant="primary" size="3xl" className="h-32 w-32 text-sky-400 mx-auto" />
                 <div className="my-4 mx-4 text-center font-bold">
                     <p>Anda bisa mengisi form kembali setelah 5 detik</p>
                 </div>
