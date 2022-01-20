@@ -93,7 +93,7 @@ export default function Login() {
                   menyelesaikan masalah dalam suatu pekerjaan, selama berkuliah
                   saya memeiliki beberapa penghargaan regional, nasional maupun internasional. Selama
                   berkuliah saya bekerja sebagai <i>Freelancer</i> pengembangan web khususnya di bidang
-                  <b>Frontend
+                  <b> Frontend
                     Developer</b>. Saya juga berpengalaman
                   dibidang desain dengan beberapa penghargaan yang saya dapatkan dengan menggunakan
                   Photoshop.”
