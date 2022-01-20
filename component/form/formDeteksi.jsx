@@ -7,7 +7,7 @@ const ChatBox = () => {
     const [kumpulan, setKumpulan] = useState([])
     const [quest, setQuest] = useState()
     const handleSubmit = () => {
-        axios.post('http://192.168.47.40:5000/', {
+        axios.post('https://oodapi.herokuapp.com/', {
             text: quest
         }).then(function (res) {
             console.log(res)
