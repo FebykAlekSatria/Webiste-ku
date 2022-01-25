@@ -1,7 +1,7 @@
 const Navbar = (props) => {
     return (
         <header className="l-header ">
-            <nav className="nav bd-grid pt-3 ">
+            <nav className="nav bd-grid pt-3 h-auto">
                 <div>
                     <p className="text-xl font-bold text-sky-400">{props.title}</p>
                 </div>
