@@ -151,7 +151,21 @@ export default function Login() {
       <section className="about section" id="Work">
         <h2 className="font-bold text-3xl text-center text-sky-400">Work</h2>
         <div className="px-10  md:px-8 md:flex item-center w-full">
+
           <div className="mx-auto lg:grid grid-cols-2 gap-2">
+
+            {/* <div className="min-h-72 w-full py-6 flex flex-col justify-center sm:py-12 font-sm">
+              <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                  className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                </div>
+                <div className="relative px-4 py-10 bg-slate-800 shadow-lg sm:rounded-3xl sm:p-20 text-white">
+                  <div className="max-w-md mx-auto">
+                  </div>
+                </div>
+              </div>
+            </div> */}
+
 
             <Works
               title="Digifile"
@@ -246,10 +260,10 @@ export default function Login() {
 
           </div>
         </div>
-      </section>
+      </section >
 
       {/* <!-- ARCHIeVMENT --!> */}
-      <section className="work section" id="Achievement">
+      < section className="work section" id="Achievement" >
         <h2 className="font-bold text-3xll text-center mb-10 text-sky-400">Achievement</h2>
 
         <div className="work__container bd-grid">
@@ -287,7 +301,7 @@ export default function Login() {
           </div>
         </div>
         <br />
-      </section>
+      </section >
 
 
       <footer className="footer">
