@@ -52,6 +52,11 @@ export default function User() {
                 {dataset ? <Data /> : null}
                 {training ? <Klasifikasi /> : null}
                 {klasifikasi ? <Deteksi /> : null}
+                {/* <div className="md:grid grid-cols-2 gap-20"></div> */}
+                {/* <div className="h-96 bg-slate-900 py-2 block border-1 border-sky-500 rounded-lg overflow-auto">
+                    <p className="text-center">hasil</p>
+                </div> */}
+
 
             </div>
             <footer className="footer bg-blue-700 mt-10">

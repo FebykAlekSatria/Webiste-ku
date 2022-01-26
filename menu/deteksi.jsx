@@ -40,20 +40,9 @@ export default function Deteksi() {
                 {/* <div className="p-4 h-96 w-full lg:w-10/12 mx-auto my-10 mt-20 bg-slate-800 shadow rounded-3xl text-sm">
                             <h4 className='text-center font-semibold text-white'>Deteksi Domain Chat</h4> */}
                 <ChatBox />
-                {/* <div>
-                                <div
-                                    className="bg-slate-800 float-right w-auto mx-4 my-1 p-2 rounded-lg clearfix text-sm"
-                                >
-                                    <i className='float-right text-xs ml-10 mt-4'>Kamu</i>
-                                </div>
-                                <div
-                                    className="bg-sky-500 float-left w-auto mx-4 my-1 p-2 rounded-lg clearfix text-sm"
-                                >kalimat terdeteksi
-                                    <i className='float-right text-xs ml-10 mt-4'>Sistem</i>
-                                </div>
-                            </div> */}
-                {/* </div> */}
+
             </div>
         </div>
+
     )
 }
