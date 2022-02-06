@@ -20,6 +20,8 @@ import qna1 from '../public/img/qna1.jpg';
 import qna2 from '../public/img/qna2.jpg';
 import Review1 from '../public/img/review.jpg';
 import Review2 from '../public/img/review2.jpg';
+import ml1 from '../public/img/ml1.jpg';
+import ml2 from '../public/img/ml2.jpg';
 
 import Sertifikat1 from '../public/img/sertifikat3.jpg';
 import Sertifikat2 from '../public/img/sertifikat4.png';
@@ -67,10 +69,10 @@ export default function Login() {
         </div>
 
         <div className="home__social">
-          <a href="www.linkedin.com/in/febykaleksatria" className="home__social-icon"><BsLinkedin /> </a>
-          <a href="" className="home__social-icon"> <BsGithub /></a>
-          <a href="https://www.instagram.com/string_sout/" className="home__social-icon"><RiInstagramFill /></a>
-          <a href="https://wa.me/+6281373107544" className="home__social-icon"><IoLogoWhatsapp /></a>
+          <a target='_blank' href="https://www.linkedin.com/in/febykaleksatria/" className="home__social-icon"><BsLinkedin /> </a>
+          <a target='_blank' href="https://github.com/FebykAlekSatria" className="home__social-icon"> <BsGithub /></a>
+          <a target='_blank' href="https://www.instagram.com/string_sout/" className="home__social-icon"><RiInstagramFill /></a>
+          <a target='_blank' href="https://wa.me/+6281373107544" className="home__social-icon"><IoLogoWhatsapp /></a>
         </div>
 
         <div className="home__img pt-5">
@@ -92,7 +94,7 @@ export default function Login() {
                   “Saya mahasiswa S1 Teknik Informatika UNSRI, memiliki komitmen untuk
                   menyelesaikan masalah dalam suatu pekerjaan, selama berkuliah
                   saya memeiliki beberapa penghargaan regional, nasional maupun internasional. Selama
-                  berkuliah saya bekerja sebagai <i>Freelancer</i> pengembangan web khususnya di bidang
+                  berkuliah saya bekerja sebagai
                   <b> Frontend
                     Developer</b>. Saya juga berpengalaman
                   dibidang desain dengan beberapa penghargaan yang saya dapatkan dengan menggunakan
@@ -152,7 +154,7 @@ export default function Login() {
         <h2 className="font-bold text-3xl text-center text-sky-400">Work</h2>
         <div className="px-10  md:px-8 md:flex item-center w-full">
 
-          <div className="mx-auto lg:grid grid-cols-2 gap-2">
+          <div className="mx-auto lg:grid grid-cols-2 gap-12">
 
             {/* <div className="min-h-72 w-full py-6 flex flex-col justify-center sm:py-12 font-sm">
               <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -175,7 +177,7 @@ export default function Login() {
               css=" Tailwind"
               api=" API Go-lang"
               database=" PostgreSql"
-              statusWork="Freelancer"
+              statusWork="Part-Time"
               status="Done"
               statusRepo="repository is private"
               link="https://github.com/FebykAlekSatria/DIGIFILE"
@@ -197,7 +199,7 @@ export default function Login() {
               css=" Boostrap"
               api=" PHP"
               database=" MySql"
-              statusWork="Freelancer"
+              statusWork="Part-Time"
               status="Done"
               statusRepo="repository is private"
               link="https://github.com/FebykAlekSatria/ProjectWEBCAT"
@@ -257,6 +259,30 @@ export default function Login() {
                 />
               </div>
             </Works>
+            <Works
+              title="QnA"
+              desc="QNA merupakan tempat dimana kita mempertanyakan sesuatu kepada orang dan
+              orang akan menjawabnya tanpa edentitas ataupun dengan edentitas
+              sebenarnya. Web ini dikembangkan dengan beberapa
+              teknologi terbaru :"
+              lang=" JavaScript "
+              framework=" Next Js"
+              css=" Chakra UI"
+              api=" Flask"
+              database=" Statis"
+              statusWork="Personal"
+              status="Done"
+              statusRepo="repository is private"
+              link="https://github.com/FebykAlekSatria/QNA_JS"
+            >
+              <div>
+                <CarouselSkills
+                  image1={ml1}
+                  image2={ml2}
+                  image3={ml1}
+                />
+              </div>
+            </Works>
 
           </div>
         </div>
@@ -306,15 +332,14 @@ export default function Login() {
 
       <footer className="footer">
         <section className="contact section" id="contact">
-          <h2 className="font-bold text-5xl text-center uppercase">Contact</h2>
-          <p className="footer__title">Febyk Alek Satria</p>
+          <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
           <div className="footer__social flex">
           </div>
           <a href="mailto:febykaleksatria@gmail.com"
             role="button"
             className="px-4 py-2 rounded-full bg-slate-900 no-underline text-sky-400 font-bold">Kirim Surel</a>
         </section>
-        <p>2021 copyright</p>
+        <p>2022 copyright</p>
       </footer>
 
     </div >
