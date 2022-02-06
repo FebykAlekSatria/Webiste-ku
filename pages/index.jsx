@@ -91,14 +91,10 @@ export default function Login() {
             <div className="pt-6 md:p-8 space-y-4 sm:text-center md:text-justify ">
               <blockquote>
                 <p className="text-white">
-                  “Saya mahasiswa S1 Teknik Informatika UNSRI, memiliki komitmen untuk
-                  menyelesaikan masalah dalam suatu pekerjaan, selama berkuliah
-                  saya memeiliki beberapa penghargaan regional, nasional maupun internasional. Selama
-                  berkuliah saya bekerja sebagai
-                  <b> Frontend
-                    Developer</b>. Saya juga berpengalaman
-                  dibidang desain dengan beberapa penghargaan yang saya dapatkan dengan menggunakan
-                  Photoshop.”
+                  “Saya mahasiswa S1 Teknik Informatika UNSRI, berada di semester 8 dan memiliki IPK 3.60.
+                  Selama berkuliah saya mempunyai beberapa penghargaan regional hingga internasional.
+                  Setelah menyelesaikan magang saya direkrut bekerja sebagai web Dev khususnya di bidang <b> Frontend
+                    Developer</b> secara part-time di salah satu start-up di Palembang”.
                 </p>
               </blockquote>
               <figcaption className="font-medium">
@@ -260,10 +256,9 @@ export default function Login() {
               </div>
             </Works>
             <Works
-              title="QnA"
-              desc="QNA merupakan tempat dimana kita mempertanyakan sesuatu kepada orang dan
-              orang akan menjawabnya tanpa edentitas ataupun dengan edentitas
-              sebenarnya. Web ini dikembangkan dengan beberapa
+              title="Detection Class"
+              desc="Sebuah projek PWA untuk melalakukan preprocessing data selanjutnya dilakukan Training dan pengujian, 
+              perangkat lunak digunakan untuk menyelesaikan penelitian pribadi saya dalam topik machine learning Web ini dikembangkan dengan beberapa
               teknologi terbaru :"
               lang=" JavaScript "
               framework=" Next Js"
@@ -273,7 +268,7 @@ export default function Login() {
               statusWork="Personal"
               status="Done"
               statusRepo="repository is private"
-              link="https://github.com/FebykAlekSatria/QNA_JS"
+              link="https://github.com/FebykAlekSatria/web_ml"
             >
               <div>
                 <CarouselSkills
