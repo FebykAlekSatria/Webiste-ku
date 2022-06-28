@@ -22,6 +22,10 @@ import Review1 from '../public/img/review.jpg';
 import Review2 from '../public/img/review2.jpg';
 import ml1 from '../public/img/ml1.jpg';
 import ml2 from '../public/img/ml2.jpg';
+import Translator from '../public/img/translatorApp.jpg';
+import kurban1 from '../public/img/kurban1.jpg';
+import kurban2 from '../public/img/kurban2.jpg';
+import kurban3 from '../public/img/kurban3.jpg';
 
 import Sertifikat1 from '../public/img/sertifikat3.jpg';
 import Sertifikat2 from '../public/img/sertifikat4.png';
@@ -64,7 +68,7 @@ export default function Login() {
           <h2 className="my-10 text-5xl font-bold text-white">{"Hi,I'am"} <span className="text-sky-400 font-bold">Febyk</span><br /> Frontend<br />
             Developer</h2>
 
-          <a href="https://drive.google.com/file/d/1u-cF2MOQGy1GNlnQO5vv4ULWp952IPQj/view?usp=sharing"
+          <a target='blank' href="https://drive.google.com/file/d/1IAnj7JiQUomWYnZGZYoIKmtGRMN0nkQw/view?usp=sharing"
             className="bg-sky-500 text-white font-bold text-lg md:text-xl mb-6 px-8 py-3 shadow-md rounded-3xl no-underline">Download CV</a>
         </div>
 
@@ -91,10 +95,8 @@ export default function Login() {
             <div className="pt-6 md:p-8 space-y-4 sm:text-center md:text-justify ">
               <blockquote>
                 <p className="text-white">
-                  “Saya mahasiswa S1 Teknik Informatika UNSRI, berada di semester 8 dan memiliki IPK 3.60.
-                  Selama berkuliah saya mempunyai beberapa penghargaan regional hingga internasional.
-                  Setelah menyelesaikan magang saya direkrut bekerja sebagai web Dev khususnya di bidang <b> Frontend
-                    Developer</b> secara part-time di salah satu start-up di Palembang”.
+                  “Saya Febyk Alek Satria lulusan Teknik Informatika Universitas Sriwijaya. Saya memiliki ketertarikan dan kemampuan di bidang frontend dan web
+                  developer. Sebelumnya saya telah bekerja pada saat masih menjadi mahasiswa pada perusahaan strartup lokal yang ada di Palembang. Saya dapat membangun sebuah website dengan teknologi terbaru dan saya senang untuk memperlajari hal baru.”.
                 </p>
               </blockquote>
               <figcaption className="font-medium">
@@ -102,7 +104,7 @@ export default function Login() {
                   Febyk Alek Satria
                 </div>
                 <div className="text-white">
-                  Mahasiswa | Frontend Developer | Indonesia
+                  Fresh Greduate | Frontend Developer | Web Developer
                 </div>
               </figcaption>
             </div>
@@ -122,6 +124,7 @@ export default function Login() {
             <hr className="text-white mb-2" />
             <p className="text-white mb-2">Java</p>
             <p className="text-white mb-2">JavaScript</p>
+            <p className="text-white mb-2">Python</p>
             <p className="text-white mb-2">PHP</p>
             <p className="text-white mb-2">HTML</p>
             <p className="text-white mb-2">CSS</p>
@@ -134,8 +137,10 @@ export default function Login() {
             <p className="text-white mb-2">Express JS</p>
             <p className="text-white mb-2">Codeigniter</p>
             <p className="text-white mb-2">Laravel</p>
+            <p className="text-white mb-2">Flask</p>
             <p className="text-white mb-2">Tailwind</p>
-            <p className="text-white mb-2">Boostrap</p>
+            <p className="text-white mb-2">Bootstrap</p>
+            <p className="text-white mb-2">Chakra UI</p>
           </Skills>
           <Skills title="Database">
             <hr className="text-white mb-2" />
@@ -163,6 +168,29 @@ export default function Login() {
                 </div>
               </div>
             </div> */}
+
+            <Works
+              title="Translator"
+              description="Translator digunakan untuk menejermahkan dari berbagai bahasa ke bahasa yang diinginkan."
+              image={Translator}
+              lang=" Javascript "
+              framework=" Next JS "
+              api=" API IBM Cloud "
+              database=" IBM Cloud "
+              css=" Chacra UI "
+              statusWork="Personal"
+              status="Done"
+              statusRepo="repository is public"
+              link="https://github.com/FebykAlekSatria/translator"
+            >
+              <div>
+                <CarouselSkills
+                  image1={Translator}
+                  image2={Translator}
+                  image3={Translator}
+                />
+              </div>
+            </Works>
 
 
             <Works
@@ -232,6 +260,28 @@ export default function Login() {
             </Works>
 
             <Works
+              title="Website Kurban"
+              desc="Website kurban digunakan untuk pencataan data kurban yang ada pada suatu masjid, terdapat beberapa fitur yang dapat digunakan antara lain seperti tabungan kurban, transaksi kurban, laporan kurban, distribusi kurban, dan lainnya."
+              lang=" PHP "
+              framework=" Laravel"
+              css=" Boostrap"
+              api=" Laravel"
+              database=" Mysql"
+              statusWork="Freelancer"
+              status="Done"
+              statusRepo="repository is private"
+              link="https://github.com/FebykAlekSatria/qurban"
+            >
+              <div>
+                <CarouselSkills
+                  image1={kurban1}
+                  image2={kurban2}
+                  image3={kurban3}
+                />
+              </div>
+            </Works>
+
+            <Works
               title="QnA"
               desc="QNA merupakan tempat dimana kita mempertanyakan sesuatu kepada orang dan
               orang akan menjawabnya tanpa edentitas ataupun dengan edentitas
@@ -260,14 +310,14 @@ export default function Login() {
               desc="Sebuah projek PWA untuk melalakukan preprocessing data selanjutnya dilakukan Training dan pengujian, 
               perangkat lunak digunakan untuk menyelesaikan penelitian pribadi saya dalam topik machine learning Web ini dikembangkan dengan beberapa
               teknologi terbaru :"
-              lang=" JavaScript "
+              lang=" JavaScript & Python "
               framework=" Next Js"
               css=" Chakra UI"
               api=" Flask"
               database=" Statis"
               statusWork="Personal"
               status="Done"
-              statusRepo="repository is private"
+              statusRepo="repository is public"
               link="https://github.com/FebykAlekSatria/web_ml"
             >
               <div>
