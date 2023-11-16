@@ -90,7 +90,7 @@ export default function Login() {
 
         <div className="about__container">
           <figure className="w-10/12 lg:w-8/12 lg:flex bg-slate-800 shadow-md rounded-xl p-8 md:p-0 mx-auto">
-            <Image className="w-40 h-40 lg:w-72 lg:h-auto rounded-full lg:rounded-none mx-auto"
+            <Image className="w-40 h-40 lg:w-72 lg:h-auto rounded-full lg:rounded-none mx-auto bg-cover"
               src={About} alt="profil" />
             <div className="pt-6 md:p-8 space-y-4 sm:text-center md:text-justify ">
               <blockquote>
@@ -125,6 +125,7 @@ export default function Login() {
             <p className="text-white mb-2">Java</p>
             <p className="text-white mb-2">JavaScript</p>
             <p className="text-white mb-2">Python</p>
+            <p className="text-white mb-2">Dart</p>
             <p className="text-white mb-2">PHP</p>
             <p className="text-white mb-2">HTML</p>
             <p className="text-white mb-2">CSS</p>
@@ -134,6 +135,7 @@ export default function Login() {
             <hr className="text-white mb-2" />
             <p className="text-white mb-2">React JS/Next JS</p>
             <p className="text-white mb-2">Node JS</p>
+            <p className="text-white mb-2">Flutter</p>
             <p className="text-white mb-2">Express JS</p>
             <p className="text-white mb-2">Codeigniter</p>
             <p className="text-white mb-2">Laravel</p>
